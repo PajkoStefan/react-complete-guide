@@ -1,5 +1,5 @@
 import ExpanseDate from "./ExpanseDate/ExpanseDate";
-import Card from "../../Card/Card";
+import Card from "../../UI/Card/Card";
 import "./ExpenseItem.css";
 
 const ExpenseItem = ({ item }) => {

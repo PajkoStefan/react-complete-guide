@@ -3,7 +3,7 @@ import Expenses from "./components/Expenses/Expenses";
 //import data
 import { expenses } from "./data";
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <h1>React App</h1>
