@@ -19,8 +19,26 @@ export const EXPENSES = [
   },
   {
     id: 4,
-    date: new Date(2022, 7, 8),
+    date: new Date(2022, 7, 12),
     title: "New Desk",
-    price: 153,
+    price: 153.89,
+  },
+  {
+    id: 5,
+    date: new Date(2022, 6, 8),
+    title: "New Chair",
+    price: 73.89,
+  },
+  {
+    id: 6,
+    date: new Date(2022, 8, 18),
+    title: "New Carpet",
+    price: 232.42,
+  },
+  {
+    id: 7,
+    date: new Date(2022, 2, 8),
+    title: "New Mouse",
+    price: 18.88,
   },
 ];
