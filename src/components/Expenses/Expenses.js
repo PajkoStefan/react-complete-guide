@@ -3,6 +3,7 @@ import ExpenseItem from "./ExpenseItem/ExpenseItem";
 import ExpensesFilter from "./ExpenseFilter/ExpensesFilter";
 import Card from "../UI/Card/Card";
 import "./Expenses.css";
+import ExpensesList from "./ExpensesList/ExpensesList";
 
 const Expenses = ({ expenseItems }) => {
   const [filteredYear, setFilteredYear] = useState(() =>
@@ -22,9 +23,7 @@ const Expenses = ({ expenseItems }) => {
           onFilterChange={filterChangeHandler}
           selectedYear={filteredYear}
         />
-        {filteredExpenseItemsByYear.map((item) => {
-          return <ExpenseItem key={item.id} item={item} />;
-        })}
+        <ExpensesList items={filteredExpenseItemsByYear}/>
       </Card>
     </div>
   );

@@ -11,14 +11,16 @@ const ExpenseItem = ({ item, setItems }) => {
   };
 
   return (
-    <Card className="expense-item">
-      <ExpenseDate date={item.date} />
-      <div className="expense-item__description">
-        <h2>{title}</h2>
-        <div className="expense-item__price">${item.price}</div>
-      </div>
-      <button onClick={changeTitleHandler}>Change Title</button>
-    </Card>
+    <li>
+      <Card className="expense-item">
+        <ExpenseDate date={item.date} />
+        <div className="expense-item__description">
+          <h2>{title}</h2>
+          <div className="expense-item__price">${item.price}</div>
+        </div>
+        <button onClick={changeTitleHandler}>Change Title</button>
+      </Card>
+    </li>
   );
 };
 

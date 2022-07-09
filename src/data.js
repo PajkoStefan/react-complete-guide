@@ -1,10 +1,10 @@
 export const EXPENSES = [
-  {
-    id: 1,
-    date: new Date(2020, 6, 25),
-    title: "Toilet Paper",
-    price: 12,
-  },
+  // {
+  //   id: 1,
+  //   date: new Date(2020, 6, 25),
+  //   title: "Toilet Paper",
+  //   price: 12,
+  // },
   {
     id: 2,
     date: new Date(2021, 3, 12),
