@@ -1,6 +1,6 @@
-import "./ExpanseDate.css";
+import "./ExpenseDate.css";
 
-const ExpanseDate = ({ date }) => {
+const ExpenseDate = ({ date }) => {
   const month = date.toLocaleString("en-US", { month: "long" });
   const day = date.toLocaleString("en-US", { day: "2-digit" });
   const year = date.getFullYear();
@@ -14,4 +14,4 @@ const ExpanseDate = ({ date }) => {
   );
 };
 
-export default ExpanseDate;
+export default ExpenseDate;

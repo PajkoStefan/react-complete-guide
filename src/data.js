@@ -1,4 +1,4 @@
-export const expenses = [
+export const EXPENSES = [
   {
     id: 1,
     date: new Date(2020, 6, 25),

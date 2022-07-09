@@ -1,5 +1,5 @@
 import { useState } from "react";
-import ExpanseDate from "./ExpanseDate/ExpanseDate";
+import ExpenseDate from "./ExpenseDate/ExpenseDate";
 import Card from "../../UI/Card/Card";
 import "./ExpenseItem.css";
 
@@ -12,7 +12,7 @@ const ExpenseItem = ({ item, setItems }) => {
 
   return (
     <Card className="expense-item">
-      <ExpanseDate date={item.date} />
+      <ExpenseDate date={item.date} />
       <div className="expense-item__description">
         <h2>{title}</h2>
         <div className="expense-item__price">${item.price}</div>

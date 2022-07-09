@@ -4,15 +4,15 @@ import "./ExpenseForm.css";
 
 const ExpenseForm = ({ onSaveExpenseData }) => {
   const [enteredTitle, setEnteredTitle] = useState("");
-  const [enteredAmount, setEnteredAmount] = useState("");
+  const [enteredPrice, setEnteredPrice] = useState("");
   const [enteredDate, setEnteredDate] = useState("");
 
   const titleChangeHandler = (event) => {
     setEnteredTitle(event.target.value);
   };
 
-  const amountChangeHandler = (event) => {
-    setEnteredAmount(event.target.value);
+  const priceChangeHandler = (event) => {
+    setEnteredPrice(event.target.value);
   };
 
   const dateChangeHandler = (event) => {
@@ -24,14 +24,14 @@ const ExpenseForm = ({ onSaveExpenseData }) => {
 
     const expenseData = {
       title: enteredTitle,
-      amount: enteredAmount,
+      price: enteredPrice,
       date: new Date(enteredDate),
     };
 
     onSaveExpenseData(expenseData);
 
     setEnteredTitle("");
-    setEnteredAmount("");
+    setEnteredPrice("");
     setEnteredDate("");
   };
 
@@ -48,13 +48,13 @@ const ExpenseForm = ({ onSaveExpenseData }) => {
         </div>
 
         <div className="new-expense__control">
-          <label>Amount</label>
+          <label>Price</label>
           <input
             type="number"
-            value={enteredAmount}
+            value={enteredPrice}
             min="0.01"
             step="0.01"
-            onChange={amountChangeHandler}
+            onChange={priceChangeHandler}
           />
         </div>
 
